@@ -10,10 +10,12 @@ const pope = {
         console.log(`Yay!`);
         this.age++;
     },
-    addCard: function (card) {
+    addCard: function(card) {
+        console.log(`Adding ${card}to collection`);
         this.baseballCards.push(card);
     },
     displayCards: function() {
+        console.log("Look at my cards, ya'll");
         for (let i = 0; i < this.baseballCards.length; i++){
             console.log(this.baseballCards[i]);
         }
@@ -33,3 +35,12 @@ pope.celebrateBirthday();
 tellMeAboutThePope();
 
 pope.displayCards();
+pope.addCard("Mookie Wilson");
+pope.addCard("Bill M.");
+
+pope.displayCards();
+pope.addCard("Babe Ruth");
+pope.addCard("Mickey Mantle");
+pope.displayCards();
+
+
