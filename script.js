@@ -6,3 +6,5 @@ const pope = {
         console.log(`I bless you, ${blessee}`);
     }
 };
+
+console.log(`The Pope is named ${pope.name}`);
